@@ -267,5 +267,6 @@ func (basicDBCreator) Create(p *properties.Properties) (ycsb.DB, error) {
 }
 
 func init() {
+	fmt.Println("basic ok")
 	ycsb.RegisterDBCreator("basic", basicDBCreator{})
 }
